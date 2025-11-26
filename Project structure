@@ -1,0 +1,80 @@
+changex-enterprise-ai/
+├── docker/
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   └── nginx.conf
+├── kubernetes/
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   ├── ingress.yaml
+│   └── configmap.yaml
+├── src/
+│   ├── main.py
+│   ├── config/
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   └── security.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── base.py
+│   │   ├── user.py
+│   │   ├── document.py
+│   │   └── enterprise.py
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── ai_engine.py
+│   │   ├── security_engine.py
+│   │   ├── market_intelligence.py
+│   │   ├── workflow_engine.py
+│   │   └── automation_engine.py
+│   ├── api/
+│   │   ├── __init__.py
+│   │   ├── v1/
+│   │   │   ├── __init__.py
+│   │   │   ├── endpoints/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── auth.py
+│   │   │   │   ├── documents.py
+│   │   │   │   ├── users.py
+│   │   │   │   └── analytics.py
+│   │   │   └── routers.py
+│   │   └── dependencies.py
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── logging.py
+│   │   ├── database.py
+│   │   ├── cache.py
+│   │   └── monitoring.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── helpers.py
+│   │   └── validators.py
+│   └── static/
+│       ├── css/
+│       ├── js/
+│       └── images/
+├── tests/
+│   ├── __init__.py
+│   ├── test_api.py
+│   ├── test_models.py
+│   └── test_services.py
+├── alembic/
+│   ├── versions/
+│   └── env.py
+├── requirements/
+│   ├── base.txt
+│   ├── production.txt
+│   └── development.txt
+├── scripts/
+│   ├── deploy.sh
+│   ├── migrate.sh
+│   └── backup.sh
+├── docs/
+│   ├── api.md
+│   └── deployment.md
+├── .env.example
+├── .dockerignore
+├── .gitignore
+├── pyproject.toml
+├── setup.py
+└── README.md
